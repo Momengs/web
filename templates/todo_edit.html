@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改 todo 的页面</title>
+</head>
+<body>
+    <h1>修改 todo</h1>
+{#    <form action="/todo/update?id={{ todo_id }}" method="post">#}
+{#    <form action="/todo/update/1" method="post">#}
+    <form action="/todo/update" method="post">
+    <input name="id" value="{{todo_id}}"
+           placeholder="请输入todo id" hidden
+    >
+    <br>
+    <input name="title" value="{{todo_title}}"
+           type="text" placeholder="请输入todo"
+    >
+    <br>
+    <button type="submit">提交修改</button>
+    </form>
+</body>
+</html>
